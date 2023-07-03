@@ -7,8 +7,9 @@ public class AllBaiViet : ManHinh
     public SanPhamUI sanPham;
     public Transform content;
     
-    void Start()
-    {
+   protected override void Start()
+      {
+          base.Start();
         var products = GameDataManager.Instance.SanPhamSo.SanPham;
 
         for (int i = 0; i < products.Length; i++)
