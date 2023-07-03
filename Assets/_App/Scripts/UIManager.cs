@@ -29,7 +29,7 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowAllSanPham()
     {
-        AllBaiViet.SetActive(true);
+        AllSanPham.SetActive(true);
     }
 
     public void ShowTTBaiViet(int id)
