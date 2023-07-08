@@ -37,14 +37,15 @@ public class DangNhap : MonoBehaviour
     {
         ThongTinDangNhap newInfo = new ThongTinDangNhap(tdn.text, mk.text);
 
-        if (GameDataManager.Instance.KiemTraDangNhap(newInfo, out string info))
+        /*if (GameDataManager.Instance.KiemTraDangNhap(newInfo, out string info))
         {
             gameObject.SetActive(false);
         }
         else
         {
             ToastManager.Instance.ShowToast(info);
-        }
+        }*/
+        gameObject.SetActive(false);
     }
 }
 

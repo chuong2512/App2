@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,13 @@ public class Shop : MonoBehaviour
 
     public Button priBtn; 
     public Button xemThem1; 
-    public Button xemThem2; 
+    public Button xemThem2;
+
+    [Button]
+    public void Init()
+    {
+        sanPham = GetComponentsInChildren<SanPhamUI>();
+    }
 
     void Start()
     {

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de118c01cd375348bc5b06db5d3937a, type: 3}
   m_Name: "S\u1EA3n Ph\u1EA9m"
   m_EditorClassIdentifier: 
+  name: 
+  infor: 
+  folderPath: Assets/App2/sprites
   SanPham:
   - ID: 0
     anh: {fileID: 21300000, guid: 9400ed84f300b794bb266240b63c1657, type: 3}
@@ -48,4 +51,52 @@ MonoBehaviour:
     anhHai: {fileID: 0}
     thongTin: 
     gia: "2.000.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 6
+    anh: {fileID: 21300000, guid: 292eb099a18e73e4db7e2c02025e0e57, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "16.000.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 7
+    anh: {fileID: 21300000, guid: 798c2f211bbd2a542ab528f79c20fc6f, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "280.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 8
+    anh: {fileID: 21300000, guid: 5f0aaee637fa4d343a71f7f37b6034b6, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "13.000.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 9
+    anh: {fileID: 21300000, guid: 604fd1380a38c9a43aebc9861de9fcd2, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "930.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 10
+    anh: {fileID: 21300000, guid: 86a205b2c463b0846ad8d4addbca1124, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "930.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 11
+    anh: {fileID: 21300000, guid: 03e049a1575381e49a90d63dde9565ec, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "7.000.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 12
+    anh: {fileID: 21300000, guid: f5d1d4eb39409ec42a551b0bf81b09c2, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "750.000 \u0111"
+    name: Fan Cooler Master MasterFan MF120 H...
+  - ID: 13
+    anh: {fileID: 21300000, guid: d2af7a74b705e8c4f861d773961cc382, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "10.000.000 \u0111"
     name: Fan Cooler Master MasterFan MF120 H...
