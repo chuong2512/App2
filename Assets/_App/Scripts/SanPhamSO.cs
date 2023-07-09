@@ -1,17 +1,13 @@
-using System;
 using Sirenix.OdinInspector;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
-using Random = UnityEngine.Random;
 
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SanphamSO", order = 1)]
 public class SanPhamSO : ScriptableObject
 {
-    public string name = "";
+    /*public string name = "";
     public string infor = "";
-    public string folderPath = "Assets/YourFolderPath";
+    public string folderPath = "Assets/YourFolderPath";*/
     
     [InlineProperty]public SanPham[] SanPham;
     
@@ -24,7 +20,7 @@ public class SanPhamSO : ScriptableObject
         }
     }
     
-    private Sprite LoadSpritesFromFolder(string folderPath, int id)
+    /*private Sprite LoadSpritesFromFolder(string folderPath, int id)
     {
         var spriteGUIDs = AssetDatabase.FindAssets("t:sprite", new[] { folderPath }); // Tìm tất cả GUID của sprite trong thư mục
         var sprites = new Sprite[spriteGUIDs.Length];
@@ -36,9 +32,9 @@ public class SanPhamSO : ScriptableObject
         }
         if(id < sprites.Length) return sprites[id];
         return null;
-    }
+    }*/
 
-    [Button]
+    /*[Button]
     public void addNew()
     {
         SanPham newSP = new SanPham();
@@ -57,7 +53,7 @@ public class SanPhamSO : ScriptableObject
         newSP.anh = LoadSpritesFromFolder(folderPath, newSP.ID);
         Array.Resize(ref SanPham, SanPham.Length + 1);
         SanPham[SanPham.Length - 1] = newSP;
-    }
+    }*/
 
     
 
