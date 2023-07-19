@@ -22,14 +22,8 @@ public class SanPhamUI : MonoBehaviour
     private void ShowInfo()
     {
         //UIManager.Instance.ShowSanPham(ID);
-        if (isBaiViet)
-        {
-            UIManager.Instance.ShowSanPham(ID);
-        }
-        else
-        {
-            PurchasingManager.Instance.Show(ID);
-        }
+
+        UIManager.Instance.ShowSanPham(ID);
     }
 
     public void SetInfo(SanPham product)
@@ -40,6 +34,6 @@ public class SanPhamUI : MonoBehaviour
         name?.SetText(product.name);
         gia?.SetText(product.gia);
         thongTin?.SetText(product.thongTin);
-        saveObj.SetActive(GameDataManager.Instance.playerData.save.Find(i => i.ID == this.ID) != null);
+     //   saveObj?.SetActive(GameDataManager.Instance.playerData.save.Find(i => i.ID == this.ID) != null);
     }
 }

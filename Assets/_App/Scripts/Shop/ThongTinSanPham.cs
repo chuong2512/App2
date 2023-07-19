@@ -6,19 +6,48 @@ using UnityEngine.UI;
 
 public class ThongTinSanPham : ManHinh
 {
-    public Image image;
-    public TextMeshProUGUI name, thongTin, gia;
-    public Button button;
-    public Button buttonSave;
+    public SanPhamUI SanPhamUi;
+    public Button button, buttonSave;
+    public TextMeshProUGUI text;
     private int ID;
     
     protected override void Start()
     {
         base.Start();
         button.onClick.AddListener(ShowInfoShop);
-        buttonSave.onClick.AddListener(Save);
+        buttonSave.onClick.AddListener(SaveSanPham);
     }
 
+    void OnEnable()
+    {
+        
+    }
+    
+    private void SaveSanPham()
+    {
+        var check =  GameDataManager.Instance.TickSave(ID);
+
+        text.text = check ? "Bỏ lưu" : "Lưu";
+    }
+
+
+    public void SetInfo(SanPham product)
+    {
+    }
+
+    public void ShowInfo(int id)
+    {
+        var sanPham = GameDataManager.Instance.SanPhamSo.GetSanPhamWithID(id);
+
+        ID = id;
+        SanPhamUi.SetInfo(sanPham);
+
+        var check = GameDataManager.Instance.playerData.save.Contains(sanPham);
+
+        text.text = check ? "Bỏ lưu" : "Lưu";
+    }
+    
+    
     protected override void Back()
     {
         base.Back();
@@ -34,19 +63,4 @@ public class ThongTinSanPham : ManHinh
         PurchasingManager.Instance.Show(ID);
     }
 
-    public void SetInfo(SanPham product)
-    {
-        ID = product.ID;
-        image.sprite = product.anh;
-        name?.SetText(product.name);
-        gia?.SetText(product.gia);
-        thongTin?.SetText(product.thongTin);
-    }
-
-    public void ShowInfo(int id)
-    {
-        var sanPham = GameDataManager.Instance.SanPhamSo.GetSanPhamWithID(id);
-
-        SetInfo(sanPham);
-    }
 }

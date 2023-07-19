@@ -327,7 +327,7 @@ MonoBehaviour:
   gia: {fileID: 0}
   button: {fileID: 1689506680547768331}
   buttonSave: {fileID: 0}
-  saveObj: {fileID: 5832807628185263644}
+  saveObj: {fileID: 0}
   isBaiViet: 0
 --- !u!1 &5832807628185263644
 GameObject:
@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2647610854242786162
 RectTransform:
   m_ObjectHideFlags: 0
